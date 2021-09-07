@@ -1,0 +1,12 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "darlanhms/simple-express-server:1.0.0"
+    },
+    "Ports": [
+        {
+            "ContainerPort": 3000,
+            "HostPort": 80
+        }
+    ]
+}
