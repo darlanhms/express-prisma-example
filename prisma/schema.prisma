@@ -22,6 +22,6 @@ model Book {
     id          String @id @db.Uuid
     name        String @db.VarChar(255)
     description String @db.Text
-    authorId    String @db.Uuid @map("author_id")
-    author      Author @relation(fields: [authorId], references: [id])
+    author_id    String @db.Uuid @map("author_id")
+    author      Author @relation(fields: [author_id], references: [id])
 }
