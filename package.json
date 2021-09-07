@@ -12,6 +12,7 @@
         "up:db": "docker compose -f docker-compose.db.yml up -d"
     },
     "dependencies": {
+        "@prisma/client": "3.0.1",
         "cross-env": "^7.0.3",
         "dotenv": "^10.0.0",
         "express": "^4.17.1"
@@ -31,7 +32,7 @@
         "git-commit-msg-linter": "^3.2.6",
         "jest": "^27.0.6",
         "prettier": "^2.1.0",
-        "prisma": "^3.0.1",
+        "prisma": "3.0.1",
         "ts-jest": "^27.0.3",
         "ts-node": "^10.1.0",
         "ts-node-dev": "^1.1.8",
