@@ -1,5 +1,5 @@
 {
-    "name": "simple-express-typescript",
+    "name": "express-prisma-example",
     "version": "1.0.1",
     "main": "index.js",
     "repository": "https://github.com/darlanhms/simple-express-typescript.git",
