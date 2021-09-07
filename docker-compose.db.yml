@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+    prima-example-db:
+        container_name: prima-example-db
+        image: postgres:latest
+        restart: unless-stopped
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRES_PASSWORD: 'postgres'
