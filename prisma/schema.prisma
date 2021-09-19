@@ -11,17 +11,20 @@ generator client {
 }
 
 model Author {
-    @@map("author")
-    id   String @id @db.Uuid
-    name String @db.VarChar(255)
+    id    String @id @db.Uuid
+    name  String @db.VarChar(255)
     books Book[]
+
+    @@map("author")
 }
 
 model Book {
-    @@map("book")
     id          String @id @db.Uuid
     name        String @db.VarChar(255)
     description String @db.Text
-    author_id    String @db.Uuid @map("author_id")
-    author      Author @relation(fields: [author_id], references: [id])
+    gender      String @db.VarChar(255)
+    authorId    String @map("author_id") @db.Uuid
+    author      Author @relation(fields: [authorId], references: [id])
+
+    @@map("book")
 }
